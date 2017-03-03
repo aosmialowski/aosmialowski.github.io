@@ -1,0 +1,12 @@
+<header class="site-header">
+    <div class="container">
+        <div class="site-logo">
+            <h1>
+                <a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a>
+            </h1>
+        </div>
+        <nav class="site-nav">
+            {{ partial "navigation.html" . }}
+        </nav>
+    </div>
+</header>

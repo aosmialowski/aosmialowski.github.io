@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="page-articles">
+    <section>
+        <header class="site-title">
+            <h1>{{ .Title }}</h1>
+        </header>
+
+        <ol class="site-archive">
+            {{ range .Data.Pages.GroupByDate "January 2006" }}
+                <li><h1>{{ .Key }}</h1></li>
+
+                {{ range .Pages.ByDate.ByDate.Reverse }}
+                    {{ .Render "li" }}
+                {{ end }}
+            {{ end }}
+        </ol>
+    </section>
+</div>
+{{ end }}

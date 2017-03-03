@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="page page-{{ .URL }}">
+    <article>
+        <header class="site-title">
+            <h1>{{ .Title }}</h1>
+        </header>
+
+        {{ .Content }}
+    </article>
+</div>
+{{ end }}

@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="page-home">
+    <section class="site-intro">
+        <p>{{ .Site.Params.meta.intro }}</p>
+    </section>
+
+    <section>
+        <header class="site-title">
+            <h1>Latest articles</h1>
+        </header>
+
+        <ol class="site-archive">
+            {{ range first 6 (where .Data.Pages "Type" "article") }}
+                {{ .Render "li" }}
+            {{ end }}
+        </ol>
+        <a class="button" href="/articles/">View all articles</a>
+    </section>
+</div>
+{{ end }}

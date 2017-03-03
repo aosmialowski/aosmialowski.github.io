@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    {{ partial "header.html" . }}
+
+    <main class="site-content">
+        <div class="page-error">
+            <h1>404</h1>
+            <p>Sorry, can't find the page you're looking for.</p>
+            <a href="{{ .Site.BaseURL }}" class="button">Home</a>
+        </div>
+    </main>
+
+    {{ partial "footer.html" . }}
+</body>
+</html>
