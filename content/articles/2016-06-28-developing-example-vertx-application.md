@@ -6,7 +6,7 @@ categories: ["Development"]
 tags: ["java", "jvm", "vertx"]
 ---
 
-In [one](/development-with-vertx-an-event-driven-application-framework/) of the previous posts Vert.x - an event-driven
+In [one](/development-with-vert.x-an-event-driven-application-framework/) of the previous posts Vert.x - an event-driven
 application framework has been introduced. The basic features has been described as were as framework advantages and
 architecture. In this post, a simple Vert.x application development process will be described.
 

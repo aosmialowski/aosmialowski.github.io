@@ -9,8 +9,8 @@ tags: ["java", "jvm", "vertx"]
 As can be seen in the article history I recently fall in love with Vert.x - an event-driven framework for JVM. So far
 there are two Vert.x related posts on this blog:
 
-  + [Development with Vert.x: an event-driven application framework](/development-with-vertx-an-event-driven-application-framework/)
-  + [Developing a simple application with Vert.x](/developing-example-vertx-application/).
+  + [Development with Vert.x: an event-driven application framework](/development-with-vert.x-an-event-driven-application-framework/)
+  + [Developing a simple application with Vert.x](/developing-example-vert.x-application/).
 
 This post will be a summary of Vert.x best practices.
 
