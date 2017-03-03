@@ -2,7 +2,7 @@ baseURL: "http://osmialowski.net"
 languageCode: "en-us"
 metaDataFormat: "yaml"
 permalinks:
-  articles: "/:title/"
+  articles: "/:slug/"
 
 title: "Andrzej Ośmiałowski - Software Developer"
 copyright: "Licensed under a Creative Commons Attribution."
