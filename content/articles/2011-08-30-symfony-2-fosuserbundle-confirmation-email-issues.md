@@ -11,7 +11,7 @@ On Stack Overflow & Symfony forums I recently saw questions about FOSUserBundle 
 
 First of all, it is not an issue at all. It is caused by misunderstanding of the bundle documentation. Every configuration attribute can be found in FOSUserBundle configuration reference.
 
-###Solution
+### Solution
 
 To enable email confirmation in your application you just need to enable it via your application config file (app/config/config.yml in this example):
 
