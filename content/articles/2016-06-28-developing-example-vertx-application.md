@@ -1,5 +1,6 @@
 ---
 title: "Developing example Vert.x application"
+slug: "developing-example-vertx-application"
 date: "2016-06-28T11:12:48Z"
 type: "article"
 categories: ["Development"]

@@ -1,5 +1,6 @@
 ---
 title: "Development with Vert.x: an event-driven application framework"
+slug: "development-with-vertx-an-event-driven-application-framework"
 date: "2016-05-15T14:10:50Z"
 type: "article"
 categories: ["Development"]

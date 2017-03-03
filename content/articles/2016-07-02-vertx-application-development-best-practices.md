@@ -1,5 +1,6 @@
 ---
 title: "Vert.x application development best practices"
+slug: "vertx-application-development-best-practices"
 date: "2016-07-02T15:40:22Z"
 type: "article"
 categories: ["Develpment"]

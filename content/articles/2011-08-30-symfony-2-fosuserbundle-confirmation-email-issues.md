@@ -1,5 +1,6 @@
 ---
-title: ""
+title: "Symfony 2 + FOSUserBundle: confirmation email issues"
+slug: "symfony2-fosuserbundle-confirmation-email-issues"
 date: "2011-08-30T00:35:00Z"
 type: "article"
 categories: ["Development"]
