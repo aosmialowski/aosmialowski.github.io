@@ -23,7 +23,7 @@ menu:
     - name: "RSS"
       weight: 500
       identifier: "rss"
-      url: "index.xml"
+      url: "/index.xml"
 
 params:
   meta:
