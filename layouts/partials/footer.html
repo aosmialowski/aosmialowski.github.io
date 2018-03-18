@@ -1,15 +1,15 @@
 <footer class="site-footer">
     <div class="left">
         <p>
-            &copy; {{ .Now.Format "2006" }}
+            &copy; {{ now.Format "2006" }}
             <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><strong>{{ .Site.Author.name }}</strong></span></span>.
         </p>
         <p>{{ .Site.Copyright }}</p>
         <p>Made with <i class="fa fa-heart"></i> in Poland.</p>
     </div>
     <div class="right">
-        <p><a href="https://twitter.com/{{ .Site.Params.social.twitter }}"><i class="fa fa-twitter"></i> Twitter</a></p>
-        <p><a href="https://github.com/{{ .Site.Params.social.github }}"><i class="fa fa-github"></i> Github</a></p>
-        <p><a href="http://linkedin.com/in/{{ .Site.Params.social.linkedin }}"><i class="fa fa-linkedin"></i> LinkedIn</a></p>
+        <p><a href="https://twitter.com/{{ .Site.Params.social.twitter }}">Twitter <i class="fa fa-twitter"></i></a></p>
+        <p><a href="https://github.com/{{ .Site.Params.social.github }}">Github <i class="fa fa-github"></i></a></p>
+        <p><a href="http://linkedin.com/in/{{ .Site.Params.social.linkedin }}">LinkedIn <i class="fa fa-linkedin"></i></a></p>
     </div>
 </footer>
