@@ -6,12 +6,8 @@
         </header>
 
         <ol class="site-archive">
-            {{ range .Data.Pages.GroupByDate "January 2006" }}
-                <li><h1>{{ .Key }}</h1></li>
-
-                {{ range .Pages.ByDate.ByDate.Reverse }}
-                    {{ .Render "li" }}
-                {{ end }}
+            {{ range .Pages.ByDate.ByDate.Reverse }}
+                {{ .Render "li" }}
             {{ end }}
         </ol>
     </section>
