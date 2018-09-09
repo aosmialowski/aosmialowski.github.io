@@ -1,1 +1,118 @@
-Hello world
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="robots" content="all">
+
+    <title>Andrzej Ośmiałowski - Software Engineer</title>
+    <meta name="author" content="Andrzej Ośmiałowski">
+    <meta name="description" content="Development blog by Andrzej Ośmiałowski">
+    <meta name="keywords" content="development, php, java, spring, doctrine, symfony">
+
+    <link href="//medium.com/feed/@aosmialowski" rel="alternate" type="application/rss+xml" title="Andrzej Ośmiałowski - Software Engineer" />
+    <link href="//medium.com/feed/@aosmialowski" rel="feed" type="application/rss+xml" title="Andrzej Ośmiałowski - Software Engineer" />
+
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&subset=latin,latin-ext">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,700,300&subset=latin,latin-ext">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/agate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Andrzej Ośmiałowski - Software Engineer">
+    <meta property="og:description" content="Development blog by Andrzej Ośmiałowski">
+    <meta property="og:url" content="https://aosmialowski.github.io">
+    <meta property="og:site_name" content="Andrzej Ośmiałowski - Software Engineer">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@aosmialowski" />
+    <meta name="twitter:title" content="Andrzej Ośmiałowski - Software Engineer" />
+    <meta name="twitter:description" content="Development blog by Andrzej Ośmiałowski" />
+    <meta name="twitter:url" content="https://aosmialowski.github.io" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo">
+                <h1>
+                    <a href="/">Andrzej Ośmiałowski</a>
+                </h1>
+            </div>
+            <nav class="site-nav">
+                <ol>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="https://medium.com/@aosmialowski">Articles</a></li>
+                    <li><a href="/files/resume.pdf">Resume</a></li>
+                    <li><a href="https://medium.com/feed/@aosmialowski">RSS</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-content">
+        <div class="page-home">
+            <section class="site-intro">
+                <p>Hello! I'm Andrzej, a software developer & freelance consultant from Wrocław, PL.</p>
+            </section>
+
+            <section>
+                <header class="site-title">
+                    <h1>Latest articles</h1>
+                </header>
+
+                <ol class="site-archive"></ol>
+                <a class="button" href="https://medium.com/@aosmialowski">View all articles</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="left">
+            <p>
+                &copy; 2018
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name"><strong>Andrzej Ośmiałowski</strong></span>
+                </span>.
+            </p>
+            <p>Licensed under a Creative Commons Attribution.</p>
+            <p>Made with <i class="fa fa-heart"></i> in Poland.</p>
+        </div>
+        <div class="right">
+            <p><a href="https://twitter.com/aosmialowski">Twitter <i class="fa fa-twitter"></i></a></p>
+            <p><a href="https://github.com/{aosmialowski">Github <i class="fa fa-github"></i></a></p>
+            <p><a href="http://linkedin.com/in/aosmialowski">LinkedIn <i class="fa fa-linkedin"></i></a></p>
+        </div>
+    </footer>
+
+    <!-- jquery.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $.get("http://cors-anywhere.herokuapp.com/https://medium.com/feed/@aosmialowski", function (data) {
+            $(data).find("item").slice(0,10).each(function (i, el) {
+                var el = $(this),
+                        title = el.find('title').text(),
+                        link = el.find('link').text(),
+                        date = new Date(el.find("pubDate").text()),
+                        dateFormatted = date.toLocaleDateString("en-US", {month: "long", day: "numeric", year: "numeric"});
+
+                $(".site-archive").append('<li><a href="' + link + '" title="' + title + '">' + title + '</a><time>' + dateFormatted + '</time></li>');
+            });
+        });
+    </script>
+
+    <!-- highlight.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- Twitter widgets.js-->
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
