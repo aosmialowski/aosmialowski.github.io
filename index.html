@@ -95,7 +95,7 @@
     <!-- jquery.js -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $.get("http://cors-anywhere.herokuapp.com/https://medium.com/feed/@aosmialowski", function (data) {
+        $.get("//cors-anywhere.herokuapp.com/https://medium.com/feed/@aosmialowski", function (data) {
             $(data).find("item").slice(0,10).each(function (i, el) {
                 var el = $(this),
                         title = el.find('title').text(),
