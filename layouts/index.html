@@ -9,12 +9,8 @@
             <h1>Latest articles</h1>
         </header>
 
-        <ol class="site-archive">
-            {{ range first 6 (where .Data.Pages "Type" "article") }}
-                {{ .Render "li" }}
-            {{ end }}
-        </ol>
-        <a class="button" href="/articles/">View all articles</a>
+        <ol class="site-archive"></ol>
+        <a class="button" href="https://medium.com/{{ .Site.Params.social.medium }}">View all articles</a>
     </section>
 </div>
 {{ end }}

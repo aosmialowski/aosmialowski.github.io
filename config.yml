@@ -1,8 +1,6 @@
 baseURL: "http://osmialowski.net"
 languageCode: "en-us"
 metaDataFormat: "yaml"
-permalinks:
-  articles: "/:slug/"
 
 title: "Andrzej Ośmiałowski - Software Developer"
 copyright: "Licensed under a Creative Commons Attribution."
@@ -16,6 +14,12 @@ menu:
       weight: 100
       identifier: "home"
       url: "/"
+    - name: "Articles"
+      weight: 200
+      url: "https://medium.com/@aosmialowski"
+    - name: "About"
+      weight: 300
+      url: "/about"
     - name: "Resume"
       weight: 400
       identifier: "resume"
@@ -31,6 +35,7 @@ params:
     keywords: "development, php, java, spring, doctrine, symfony"
     intro: "Hello! I'm Andrzej, a software developer & freelance consultant from Wrocław, PL."
   social:
+    medium: "@aosmialowski"
     facebook: "aosmialowski"
     github: "aosmialowski"
     linkedin: "osmialowski"
